@@ -1,0 +1,16 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #302E46;
+}
+.img{
+    width: 110px;
+    height: auto;
+    padding-top: 0.25rem;
+}

@@ -12,12 +12,12 @@ const page = () => {
 
   async function submitHandler(data) {
     console.log(data);
-    
+
     const res = await fetch("/api/hello", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
-        "Accept": "application/json",
+        Accept: "application/json",
         "Content-Type": "application/json",
       },
     });
@@ -28,12 +28,9 @@ const page = () => {
       reset();
     } else {
       // Manejar el caso de respuesta no exitosa
-      console.error(
-        "La solicitud no se completó correctamente."
-      );
+      console.error("La solicitud no se completó correctamente.");
     }
   }
-
 
   return (
     <form onSubmit={handleSubmit(submitHandler)}>
@@ -42,7 +39,6 @@ const page = () => {
         <input
           id="fechaDate"
           type="date"
-          name="fecha"
           {...register("fecha", { required: "elija una fecha" })}
         />
         {errors.fecha && errors.fecha.message}
@@ -52,7 +48,6 @@ const page = () => {
         <input
           id="name"
           type="text"
-          name="nombre"
           {...register("nombre", { required: "digite su nombre" })}
         />
         {errors.nombre && errors.nombre.message}
@@ -62,7 +57,6 @@ const page = () => {
         <input
           id="cel"
           type="_tel_"
-          name="celular"
           {...register("celular", { required: "escriba su numero de celular" })}
         />
         {errors.celular && errors.celular.message}
@@ -72,12 +66,12 @@ const page = () => {
         <textarea
           id="parrafo"
           type="text"
-          name="mensaje"
           placeholder="Tu Mensaje"
           {...register("mensaje", { required: "escriba su mensaje" })}
         ></textarea>
         {errors.mensaje && errors.mensaje.message}
       </div>
+
       <div>
         <button type="submit">Enviar</button>
       </div>

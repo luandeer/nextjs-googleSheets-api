@@ -1,0 +1,9 @@
+.ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.link{
+    color: white;
+}
