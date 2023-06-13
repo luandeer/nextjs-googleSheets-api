@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "@/components/nav/page";
+import Nav from "@/components/nav/Nav";
 import styles from "./estilos.module.css";
 import Image from "next/image";
-import logo from "../../../../public/image/logo.png";
+import logo from "../../../public/image/logo.png";
 import Link from "next/link";
 
 const Header = () => {

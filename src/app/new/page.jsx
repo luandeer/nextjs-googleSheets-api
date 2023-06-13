@@ -1,8 +1,15 @@
 "use client";
 import React from "react";
 import { useForm } from "react-hook-form";
+import styles from "./estilos.module.css"
+
+import { useTasks } from "@/context/TaskContext";
+import { useRouter } from "next/navigation";
 
 const page = () => {
+
+  const {createTask} = useTasks()
+  const router = useRouter()
   const {
     register,
     handleSubmit,
@@ -12,7 +19,8 @@ const page = () => {
 
   async function submitHandler(data) {
     console.log(data);
-
+    createTask(data.fecha, data.nombre, data.celular, data.mensaje)
+    router.push('/ver-registro')
     const res = await fetch("/api/hello", {
       method: "POST",
       body: JSON.stringify(data),
@@ -33,7 +41,9 @@ const page = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submitHandler)}>
+    <>
+    <button className={styles.botonRegresar} onClick={() => router.push("/")}>Regresar</button>
+    <form className={styles.form} onSubmit={handleSubmit(submitHandler)} autoComplete="on">
       <div>
         <label htmlFor="fechaDate">Fecha</label>
         <input
@@ -76,6 +86,7 @@ const page = () => {
         <button type="submit">Enviar</button>
       </div>
     </form>
+    </>
   );
 };
 

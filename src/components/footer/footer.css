@@ -1,0 +1,131 @@
+.footer-distributed {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #302E46;
+    text-align: left;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.footer-distributed img{
+    width: 125px;
+    height: auto;
+    display: none;
+}
+
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #ffffff;
+   
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-size: 20px;
+    font-weight: 200;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    
+    background-color: var(--color-3);
+    padding: 0.5rem;
+    border-radius: 10rem;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    transition: all .25s;
+}
+.footer-distributed .footer-right a svg {
+    display: block;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+    .footer-distributed{
+        flex-direction: column;
+    }
+    .footer-distributed img{
+        display: block;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+    .footer-distributed .footer-right {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .footer-distributed{
+        flex-direction: column;
+    }
+    .footer-distributed img{
+        display: block;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+        float: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}

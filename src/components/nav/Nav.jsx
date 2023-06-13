@@ -7,7 +7,7 @@ const page = () => {
     return (
         <div >
             <ul className={styles.ul}>
-                <li><Link  href="/"  className={styles.link}>Inicio</Link></li>
+                <li><Link  href="/"  className={(styles.link)}>Inicio</Link></li>
                 <li>
                     <Link  href="/subscribe" className={styles.link}>Suscríbete</Link>
                 </li>

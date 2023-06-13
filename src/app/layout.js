@@ -1,6 +1,8 @@
 import "./globals.css";
 import Header from "@/components/header/Header";
-import Footer from "./components/footer/page";
+import Footer from "@/components/footer/Footer";
+
+import { TaskProvider } from "../context/TaskContext";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>
-        {children}
-        <Footer/>
+        <TaskProvider>
+          <Header />
+          {children}
+          <Footer />
+        </TaskProvider>
       </body>
     </html>
   );
