@@ -33,7 +33,7 @@ const page = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(submitHandler)} autoComplete="on">
+    <form onSubmit={handleSubmit(submitHandler)} autoComplete="off">
       <div>
         <label htmlFor="fechaDate">Fecha</label>
         <input

@@ -1,7 +1,6 @@
-import "./globals.css";
+import "./globals.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-
 import { TaskProvider } from "../context/TaskContext";
 
 export const metadata = {
@@ -12,11 +11,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
       <body>
         <TaskProvider>
-          <Header />
+          <Header/>
           {children}
-          <Footer />
+          <Footer/>
         </TaskProvider>
       </body>
     </html>

@@ -8,10 +8,6 @@
   --color-4: #0dc143;
   --color-text: #fafafa;
 
-  --container-width-lg: 50%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-
   --transition: all 400ms ease;
 }
 
@@ -48,37 +44,19 @@ html {
 }
 
 body {
-  width: var(--container-width-lg);
-  margin: 0 auto;
   font-family: 'Cabin', sans-serif;
   background: #F1F6F9;
-  /*background-color: #302E46;
-  //background-image: url(./assets/images/cheficon.png);*/
-}
-
-ol,
-ul,
-li {
-  list-style: none;
+  /**background-image: url(/cheficon.png);**/
 }
 
 img{
   display: block;
-  width: 100%;
   object-fit: cover;
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    width: var(--container-width-md);
-  }
-}
 
 @media screen and (max-width: 600px) {
   ::-webkit-scrollbar {
     scrollbar-width: none;
-  }
-  body {
-    width: var(--container-width-sm);
   }
 }

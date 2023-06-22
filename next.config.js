@@ -6,6 +6,9 @@ const nextConfig = {
         GOOGLE_SHEET_ID: '1CiFUA6CAc6Mb7OZAJhAEcRGpREJBISktygsN67YGsnA',
         GOOGLE_CLIENT_ID: '112818724160802431914',
     },
+    images: {
+        domains: ['cdn.pixabay.com'],
+    },
 }
 
 module.exports = nextConfig

@@ -1,8 +1,4 @@
 .footer-distributed {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-color: #302E46;
     text-align: left;
     padding: 2rem;
@@ -67,7 +63,7 @@
 
 .footer-distributed .footer-right a {
     
-    background-color: var(--color-3);
+    background-color: #ea5455;
     padding: 0.5rem;
     border-radius: 10rem;
     font-size: 20px;

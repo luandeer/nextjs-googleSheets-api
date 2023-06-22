@@ -1,0 +1,25 @@
+.header{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #302E46;
+    /*#302E46*/
+}
+.img{
+    width: 110px;
+    height: auto;
+    padding-top: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .header{
+        justify-content:space-between;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        justify-content:space-between;
+    }
+}
