@@ -1,0 +1,29 @@
+.container-beneficios-1{
+    margin: 1.2rem 0.8rem;
+}
+
+.container-beneficios-1 img{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+    min-width: 100%;
+}
+
+.container-beneficios-2{
+    margin: 1.2rem 0.8rem;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-beneficios-2 .bloque-beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    
+}

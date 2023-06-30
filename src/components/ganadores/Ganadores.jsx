@@ -1,7 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import './estilos.scss'
+import "./estilos.scss";
+
+
 const Ganadores = () => {
     const [imageUrls, setImageUrls] = useState([]);
 
@@ -25,16 +27,17 @@ const Ganadores = () => {
     }, []);
 
     return (
-        <div className="contenedor-imagenes">
+        <div className="container-imagenes">
             {imageUrls.map((imageUrl, index) => (
-                <Image
-                    width={200}
-                    height={300}
-                    key={index}
-                    src={imageUrl}
-                    alt={`Imagen ${index}`}
-                    priority
-                />
+                <div className="image-individual" key={index}>
+                    <Image
+                        width={300}
+                        height={300}
+                        src={imageUrl}
+                        alt={`Imagen ${index}`}
+                        priority
+                    />
+                </div>
             ))}
         </div>
     );

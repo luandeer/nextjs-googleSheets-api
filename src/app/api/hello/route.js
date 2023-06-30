@@ -35,10 +35,10 @@ export async function POST(request){
 
         const response = await sheets.spreadsheets.values.append({
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
-            range: 'Hoja1!A1:D1',
+            range: 'Hoja1!A1:G1',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
-                values: [[data.fecha, data.nombre, data.celular, data.mensaje]],
+                values: [[data.fecha, data.nombre, data.identidad, data.celular, data.medioPago, data.mensaje, data.extraDni]],
             },
         });
         console.log(response.data)

@@ -1,7 +1,7 @@
 //Inicia contenedor 1
 .container-home-1 {
     background-color: var(--color-3);
-    margin: 0.8rem;
+    margin: 1.2rem 0.8rem 1.2rem 0.8rem ;
     border-radius: 1.5rem;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@
     gap: 0.4rem;
     justify-content: center;
     cursor: pointer;
-    box-shadow: inset 0px -4px 5px 0px rgba(26,26,26,1);
+    box-shadow: inset 0px -3px 5px 0px rgba(26,26,26,0.26);
 
 }
 
@@ -65,6 +65,56 @@
 
 //contenedor 2
 .container-home-2 {
+    margin: 0 0.8rem 1.2rem 0.8rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-2-titulo{
+    margin: 0 auto;
+    padding-bottom: 0.4rem;
+}
+.home-2-titulo h1{
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-right: 0.3rem;
+    color: var(--color-1);
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.home-2-titulo svg{
+    font-size: 1.5rem;
+    color: var(--color-1);
+}
+
+.home-2-texto {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 auto;
+    color: var(--color-1);
+    font-family: 'Roboto', 'sans-serif';
+}
+
+Button{
+    margin-top: 1rem;
+    align-self: center;
+}
+
+.video{
+    margin-top: 0.8rem;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 0.5rem;
+}
+//fin contenedor 2
+
+//inicio contenedor 4
+.container-home-4{
     margin: 0 0.8rem 0.8rem 0.8rem;
     background-color: #ffffff;
     padding: 1rem;
@@ -72,34 +122,80 @@
     display: flex;
     flex-direction: column;
 }
-.home-2-texto {
-    font-size: 0.95rem;
-    text-align: justify;
-    margin-bottom: 1rem;
+
+.home-4-titulo{
+    margin: 0 auto;
 }
 
-Button{
-    align-self: center;
+.home-4-titulo h1{
+    font-size: 1.3rem;
+    display: inline;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    font-weight: bold;
+    color: var(--color-1);
+    font-family: 'Roboto', 'sans-serif';
+}
+.home-4-titulo svg{
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: rgb(255, 197, 6);
 }
 
+//fin de contenedor 4
 
-
-//fin contenedor 2
 
 //contenedor 3
 .container-home-3{
-    margin: 0 0.8rem 0.8rem 0.8rem;
+    margin: 1.2rem 0.8rem 1.2rem 0.8rem;
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
+.home-3-titulo{
+    margin: 0 auto;
+}
+
+.home-3-titulo h1{
+    font-size: 1.3rem;
+    display: inline;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+    font-weight: bold;
+    color: var(--color-1);
+    font-family: 'Roboto', 'sans-serif';
+}
+.home-3-titulo svg{
+    vertical-align: middle;
+    font-size: 1.5rem;
+    color: var(--color-3);
+}
+
+
 //fin contenedor 3
 
 @media screen and (max-width: 1024px) {
    
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 350px) {
+    .container-1-texto{
+        padding: 0 0 0 2rem;
+    }
+    .texto-titulo-home h1{
+        font-size: 1.25rem;
+    }
+    .container-home-1 img {
+        min-width: 160px;
+        height: 190px;
+        border-radius: 0 0 2.5rem 0;
+        padding-right: 1.5rem;
+    }  
     
 }

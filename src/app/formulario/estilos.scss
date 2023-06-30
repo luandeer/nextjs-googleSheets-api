@@ -1,0 +1,113 @@
+.formulario{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+    align-items: center;
+    
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.formulario div label{
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.formulario div input::placeholder{
+  font-family: "Open Sans", sans-serif;
+  color: #CCCCCC;
+  font-size: 0.95rem;
+}
+.formulario div textarea::placeholder{
+  font-family: "Open Sans", sans-serif;
+  color: #CCCCCC;
+  font-size: 0.95rem;
+}
+
+/*
+.formulario div label::after{
+    content: ":";
+}
+*/
+
+#fechaDate {
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  #name {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  #ident {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  #cel {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  #mPagos {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  #mPagos option {
+    font-size: 14px;
+  }
+
+  #parrafo {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+   
+  }
+
+  #extraIdent {
+   
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  #boton-formulario{
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    font-weight:bold;
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    background-color: var(--color-3);
+    color: var(--color-text);
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset 0px -3px 5px 0px rgba(26,26,26,0.26);
+  }

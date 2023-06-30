@@ -15,14 +15,18 @@ export const useTasks = () => {
 export const TaskProvider = ({ children }) => {
    const [tasks, setTasks]= useState([])
 
-    const createTask= (fecha,nombre, celular, mensaje ) =>{
+    const createTask= (fecha,nombre, identidad, celular,medioPago, mensaje, extraDni ) =>{
         setTasks([...tasks,{
             fecha,
             nombre,
+            identidad,
             celular,
+            medioPago,
             mensaje,
+            extraDni,
             id:uuid()
         }]);
+        
     }
     return (
         <TaskContext.Provider

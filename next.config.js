@@ -7,8 +7,9 @@ const nextConfig = {
         GOOGLE_CLIENT_ID: '112818724160802431914',
     },
     images: {
-        domains: ['cdn.pixabay.com'],
+        domains: ['cdn.pixabay.com', 'drive.google.com'],
     },
+    
 }
 
 module.exports = nextConfig

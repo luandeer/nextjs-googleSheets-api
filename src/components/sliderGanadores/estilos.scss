@@ -1,11 +1,22 @@
 .container-imagenes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+
+.container-imagenes .loading-imagenes{
+    margin: 0 auto;
+}
+
+.container-imagenes-ganadores{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     gap: 0.3rem;
     justify-content: center;
     justify-items: center;
 }
-
 img{
     border-radius: 0.5rem;
     max-width: 200px;

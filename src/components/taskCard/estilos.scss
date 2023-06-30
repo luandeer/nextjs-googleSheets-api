@@ -1,0 +1,25 @@
+.contenedor-post-registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .lista-registro{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;    
+    }
+
+    .lista-registro li{
+        display: flex;
+        
+        align-items: baseline;
+        gap: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+    .lista-registro li h1{
+        font-size: 1.05rem;
+        font-weight: bold;
+    }
+}

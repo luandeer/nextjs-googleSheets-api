@@ -28,7 +28,7 @@ html {
 
 ::-webkit-scrollbar {
   scrollbar-width: thin;
-  width: 5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -54,8 +54,20 @@ img{
   object-fit: cover;
 }
 
-
+#contenedor{
+  width: 50%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  #contenedor{
+    width: 86%;
+  }
+}
 @media screen and (max-width: 600px) {
+  #contenedor{
+    width: 100%;
+  }
+
   ::-webkit-scrollbar {
     scrollbar-width: none;
   }

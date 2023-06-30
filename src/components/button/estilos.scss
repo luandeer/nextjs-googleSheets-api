@@ -1,15 +1,16 @@
-button{
+.button-general{
     border-radius: 0.5rem;
     padding: 0.7rem 1rem;
     font-weight:bold;
     font-family: "Cabin", sans-serif;
     display: flex;
+    flex-direction: row-reverse;
     gap: 0.3rem;
     justify-content: center;
     cursor: pointer;
     box-shadow: inset 0px -3px 5px 0px rgba(26,26,26,0.26);
 }
 
-button svg{
+.button-general svg{
     font-size: 1.2rem;
 }

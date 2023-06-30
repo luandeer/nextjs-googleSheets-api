@@ -12,6 +12,16 @@
     padding-top: 0.25rem;
 }
 
+.header-left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-left Button{
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1024px) {
     .header{
         justify-content:space-between;
@@ -21,5 +31,8 @@
 @media screen and (max-width: 500px) {
     .header{
         justify-content:space-between;
+    }
+    .header-left {
+        flex-direction: row-reverse;
     }
 }

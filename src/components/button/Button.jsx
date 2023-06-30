@@ -9,7 +9,7 @@ const Button = (props) => {
     }
 
   return (
-    <button style={botonEstilos} >{props.nombre} {props.icono}</button>
+    <button  className='button-general' style={botonEstilos} >{props.nombre} {props.icono}</button>
    
   )
 }
